@@ -1,0 +1,568 @@
+/Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=54465:/Applications/IntelliJ
+IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -classpath
+/Users/dhimanseal/.m2/repository/com/ibm/jsonata4java/JSONata4Java/2.4.5/JSONata4Java-2.4.5.jar:
+/Users/dhimanseal/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:
+/Users/dhimanseal/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.5.1/woodstox-core-6.5.1.jar:
+/Users/dhimanseal/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:
+/Users/dhimanseal/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.15.2/jackson-dataformat-xml-2.15.2.jar:
+/Users/dhimanseal/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:
+/Users/dhimanseal/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:
+/Users/dhimanseal/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:
+/Users/dhimanseal/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:
+/Users/dhimanseal/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:
+/Users/dhimanseal/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:
+/Users/dhimanseal/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar:
+/Users/dhimanseal/.m2/repository/org/springframework/spring-web/6.0.6/spring-web-6.0.6.jar:
+/Users/dhimanseal/.m2/repository/org/springframework/spring-beans/6.0.6/spring-beans-6.0.6.jar:
+/Users/dhimanseal/.m2/repository/org/springframework/spring-core/6.0.6/spring-core-6.0.6.jar:
+/Users/dhimanseal/.m2/repository/org/springframework/spring-jcl/6.0.6/spring-jcl-6.0.6.jar:
+/Users/dhimanseal/.m2/repository/io/micrometer/micrometer-observation/1.10.4/micrometer-observation-1.10.4.jar:
+/Users/dhimanseal/.m2/repository/io/micrometer/micrometer-commons/1.10.4/micrometer-commons-1.10.4.jar:
+/Users/dhimanseal/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:
+/Users/dhimanseal/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:
+/Users/dhimanseal/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:
+/Users/dhimanseal/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:
+/Users/dhimanseal/.m2/repository/org/jetbrains/annotations-java5/24.1.0/annotations-java5-24.1.0.jar:
+/Users/dhimanseal/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:
+/Users/dhimanseal/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:
+/Users/dhimanseal/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:
+/Users/dhimanseal/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:
+/Users/dhimanseal/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:
+/Users/dhimanseal/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:
+/Users/dhimanseal/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:
+/Users/dhimanseal/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar
+io.github.dhi13man.JsonataBenchmarkingRunner
+
+# JMH version: 1.36
+
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=54465:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+
+# Warmup: 5 iterations, 10 s each
+
+# Measurement: 5 iterations, 10 s each
+
+# Timeout: 10 min per iteration
+
+# Threads: 1 thread, will synchronize iterations
+
+# Benchmark mode: Throughput, ops/time
+
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.complexTransform
+
+# Run progress: 0.00% complete, ETA 00:33:20
+
+# Warmup Fork: 1 of 3
+
+# Warmup Iteration   1: 9676.303 ops/s
+
+# Warmup Iteration   2: 10805.747 ops/s
+
+# Warmup Iteration   3: 10793.287 ops/s
+
+# Warmup Iteration   4: 10723.019 ops/s
+
+# Warmup Iteration   5: 10725.795 ops/s
+
+Iteration 1: 10642.962 ops/s
+Iteration 2: 10763.981 ops/s
+Iteration 3: 10736.755 ops/s
+Iteration 4: 10802.728 ops/s
+Iteration 5: 10629.053 ops/s
+
+# Run progress: 5.00% complete, ETA 00:32:26
+
+# Warmup Fork: 2 of 3
+
+# Warmup Iteration   1: 9842.456 ops/s
+
+# Warmup Iteration   2: 10574.432 ops/s
+
+# Warmup Iteration   3: 10611.504 ops/s
+
+# Warmup Iteration   4: 10567.350 ops/s
+
+# Warmup Iteration   5: 10400.485 ops/s
+
+Iteration 1: 10567.366 ops/s
+Iteration 2: 10553.726 ops/s
+Iteration 3: 10592.488 ops/s
+Iteration 4: 10587.905 ops/s
+Iteration 5: 10586.058 ops/s
+
+# Run progress: 10.00% complete, ETA 00:30:43
+
+# Warmup Fork: 3 of 3
+
+# Warmup Iteration   1: 9840.907 ops/s
+
+# Warmup Iteration   2: 10589.681 ops/s
+
+# Warmup Iteration   3: 10566.072 ops/s
+
+# Warmup Iteration   4: 10571.734 ops/s
+
+# Warmup Iteration   5: 9243.849 ops/s
+
+Iteration 1: 9597.080 ops/s
+Iteration 2: 10172.760 ops/s
+Iteration 3: 9789.088 ops/s
+Iteration 4: 10287.969 ops/s
+Iteration 5: 10478.595 ops/s
+
+# Run progress: 15.00% complete, ETA 00:29:03
+
+# Fork: 1 of 2
+
+# Warmup Iteration   1: 9877.357 ops/s
+
+# Warmup Iteration   2: 10948.574 ops/s
+
+# Warmup Iteration   3: 11025.112 ops/s
+
+# Warmup Iteration   4: 11029.686 ops/s
+
+# Warmup Iteration   5: 11055.634 ops/s
+
+Iteration 1: 10784.419 ops/s
+Iteration 2: 10971.169 ops/s
+Iteration 3: 10964.991 ops/s
+Iteration 4: 11019.611 ops/s
+Iteration 5: 10999.793 ops/s
+
+# Run progress: 20.00% complete, ETA 00:27:20
+
+# Fork: 2 of 2
+
+# Warmup Iteration   1: 9884.890 ops/s
+
+# Warmup Iteration   2: 10638.284 ops/s
+
+# Warmup Iteration   3: 10582.929 ops/s
+
+# Warmup Iteration   4: 10425.867 ops/s
+
+# Warmup Iteration   5: 10313.929 ops/s
+
+Iteration 1: 10598.153 ops/s
+Iteration 2: 10619.176 ops/s
+Iteration 3: 10571.717 ops/s
+Iteration 4: 10624.848 ops/s
+Iteration 5: 10603.491 ops/s
+
+Result "io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.complexTransform":
+10775.737 ±(99.9%) 291.191 ops/s [Average]
+(min, avg, max) = (10571.717, 10775.737, 11019.611), stdev = 192.605
+CI (99.9%): [10484.546, 11066.928] (assumes normal distribution)
+
+# JMH version: 1.36
+
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=54465:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+
+# Warmup: 5 iterations, 10 s each
+
+# Measurement: 5 iterations, 10 s each
+
+# Timeout: 10 min per iteration
+
+# Threads: 1 thread, will synchronize iterations
+
+# Benchmark mode: Throughput, ops/time
+
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.simpleTransform
+
+# Run progress: 25.00% complete, ETA 00:25:37
+
+# Warmup Fork: 1 of 3
+
+# Warmup Iteration   1: 52857.297 ops/s
+
+# Warmup Iteration   2: 60062.392 ops/s
+
+# Warmup Iteration   3: 60216.662 ops/s
+
+# Warmup Iteration   4: 59842.852 ops/s
+
+# Warmup Iteration   5: 60221.194 ops/s
+
+Iteration 1: 59884.159 ops/s
+Iteration 2: 60079.195 ops/s
+Iteration 3: 60138.047 ops/s
+Iteration 4: 60260.515 ops/s
+Iteration 5: 59745.979 ops/s
+
+# Run progress: 30.00% complete, ETA 00:23:54
+
+# Warmup Fork: 2 of 3
+
+# Warmup Iteration   1: 61851.518 ops/s
+
+# Warmup Iteration   2: 64412.944 ops/s
+
+# Warmup Iteration   3: 64786.895 ops/s
+
+# Warmup Iteration   4: 64147.359 ops/s
+
+# Warmup Iteration   5: 64692.797 ops/s
+
+Iteration 1: 63817.348 ops/s
+Iteration 2: 64691.596 ops/s
+Iteration 3: 64310.979 ops/s
+Iteration 4: 64468.658 ops/s
+Iteration 5: 64306.203 ops/s
+
+# Run progress: 35.00% complete, ETA 00:22:12
+
+# Warmup Fork: 3 of 3
+
+# Warmup Iteration   1: 50388.319 ops/s
+
+# Warmup Iteration   2: 56642.349 ops/s
+
+# Warmup Iteration   3: 56825.738 ops/s
+
+# Warmup Iteration   4: 56694.870 ops/s
+
+# Warmup Iteration   5: 56660.910 ops/s
+
+Iteration 1: 56718.411 ops/s
+Iteration 2: 56797.904 ops/s
+Iteration 3: 57051.368 ops/s
+Iteration 4: 56767.777 ops/s
+Iteration 5: 56546.887 ops/s
+
+# Run progress: 40.00% complete, ETA 00:20:29
+
+# Fork: 1 of 2
+
+# Warmup Iteration   1: 51839.120 ops/s
+
+# Warmup Iteration   2: 57334.006 ops/s
+
+# Warmup Iteration   3: 57055.396 ops/s
+
+# Warmup Iteration   4: 57426.655 ops/s
+
+# Warmup Iteration   5: 57478.774 ops/s
+
+Iteration 1: 57104.802 ops/s
+Iteration 2: 57274.216 ops/s
+Iteration 3: 57386.298 ops/s
+Iteration 4: 56903.132 ops/s
+Iteration 5: 55953.309 ops/s
+
+# Run progress: 45.00% complete, ETA 00:18:46
+
+# Fork: 2 of 2
+
+# Warmup Iteration   1: 52669.552 ops/s
+
+# Warmup Iteration   2: 59910.734 ops/s
+
+# Warmup Iteration   3: 59788.207 ops/s
+
+# Warmup Iteration   4: 59999.525 ops/s
+
+# Warmup Iteration   5: 60183.346 ops/s
+
+Iteration 1: 59440.781 ops/s
+Iteration 2: 59825.450 ops/s
+Iteration 3: 60182.428 ops/s
+Iteration 4: 60019.072 ops/s
+Iteration 5: 60366.246 ops/s
+
+Result "io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.simpleTransform":
+58445.573 ±(99.9%) 2517.663 ops/s [Average]
+(min, avg, max) = (55953.309, 58445.573, 60366.246), stdev = 1665.278
+CI (99.9%): [55927.910, 60963.236] (assumes normal distribution)
+
+# JMH version: 1.36
+
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=54465:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+
+# Warmup: 5 iterations, 10 s each
+
+# Measurement: 5 iterations, 10 s each
+
+# Timeout: 10 min per iteration
+
+# Threads: 1 thread, will synchronize iterations
+
+# Benchmark mode: Throughput, ops/time
+
+# Benchmark: io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.complexTransform
+
+# Run progress: 50.00% complete, ETA 00:17:04
+
+# Warmup Fork: 1 of 3
+
+# Warmup Iteration   1: 79417.902 ops/s
+
+# Warmup Iteration   2: 80527.726 ops/s
+
+# Warmup Iteration   3: 80284.776 ops/s
+
+# Warmup Iteration   4: 80257.481 ops/s
+
+# Warmup Iteration   5: 80451.317 ops/s
+
+Iteration 1: 80593.667 ops/s
+Iteration 2: 80787.704 ops/s
+Iteration 3: 80760.811 ops/s
+Iteration 4: 79431.336 ops/s
+Iteration 5: 78912.383 ops/s
+
+# Run progress: 55.00% complete, ETA 00:15:22
+
+# Warmup Fork: 2 of 3
+
+# Warmup Iteration   1: 78561.159 ops/s
+
+# Warmup Iteration   2: 80977.425 ops/s
+
+# Warmup Iteration   3: 80961.735 ops/s
+
+# Warmup Iteration   4: 81354.402 ops/s
+
+# Warmup Iteration   5: 81227.747 ops/s
+
+Iteration 1: 82474.948 ops/s
+Iteration 2: 81483.208 ops/s
+Iteration 3: 80303.606 ops/s
+Iteration 4: 80890.199 ops/s
+Iteration 5: 82074.726 ops/s
+
+# Run progress: 60.00% complete, ETA 00:13:39
+
+# Warmup Fork: 3 of 3
+
+# Warmup Iteration   1: 80322.532 ops/s
+
+# Warmup Iteration   2: 80424.835 ops/s
+
+# Warmup Iteration   3: 81292.803 ops/s
+
+# Warmup Iteration   4: 80844.267 ops/s
+
+# Warmup Iteration   5: 81118.339 ops/s
+
+Iteration 1: 81418.007 ops/s
+Iteration 2: 81062.081 ops/s
+Iteration 3: 81357.651 ops/s
+Iteration 4: 81356.326 ops/s
+Iteration 5: 81156.513 ops/s
+
+# Run progress: 65.00% complete, ETA 00:11:57
+
+# Fork: 1 of 2
+
+# Warmup Iteration   1: 80636.775 ops/s
+
+# Warmup Iteration   2: 81136.527 ops/s
+
+# Warmup Iteration   3: 81582.946 ops/s
+
+# Warmup Iteration   4: 81328.105 ops/s
+
+# Warmup Iteration   5: 81523.274 ops/s
+
+Iteration 1: 81188.675 ops/s
+Iteration 2: 81352.527 ops/s
+Iteration 3: 72009.533 ops/s
+Iteration 4: 76370.105 ops/s
+Iteration 5: 78140.192 ops/s
+
+# Run progress: 70.00% complete, ETA 00:10:14
+
+# Fork: 2 of 2
+
+# Warmup Iteration   1: 74681.325 ops/s
+
+# Warmup Iteration   2: 74813.864 ops/s
+
+# Warmup Iteration   3: 80827.712 ops/s
+
+# Warmup Iteration   4: 80226.978 ops/s
+
+# Warmup Iteration   5: 81768.260 ops/s
+
+Iteration 1: 81998.160 ops/s
+Iteration 2: 82044.499 ops/s
+Iteration 3: 82071.063 ops/s
+Iteration 4: ^D
+77816.934 ops/s
+Iteration 5: 81137.985 ops/s
+
+Result "io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.complexTransform":
+79412.967 ±(99.9%) 5009.234 ops/s [Average]
+(min, avg, max) = (72009.533, 79412.967, 82071.063), stdev = 3313.298
+CI (99.9%): [74403.733, 84422.201] (assumes normal distribution)
+
+# JMH version: 1.36
+
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=54465:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+
+# Warmup: 5 iterations, 10 s each
+
+# Measurement: 5 iterations, 10 s each
+
+# Timeout: 10 min per iteration
+
+# Threads: 1 thread, will synchronize iterations
+
+# Benchmark mode: Throughput, ops/time
+
+# Benchmark: io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.simpleTransform
+
+# Run progress: 75.00% complete, ETA 00:08:32
+
+# Warmup Fork: 1 of 3
+
+# Warmup Iteration   1: 79161.670 ops/s
+
+# Warmup Iteration   2: 72199.560 ops/s
+
+# Warmup Iteration   3: 80076.972 ops/s
+
+# Warmup Iteration   4: 81760.021 ops/s
+
+# Warmup Iteration   5: 82576.140 ops/s
+
+Iteration 1: 82085.181 ops/s
+Iteration 2: 81736.496 ops/s
+Iteration 3: 79725.419 ops/s
+Iteration 4: 81240.074 ops/s
+Iteration 5: 80824.793 ops/s
+
+# Run progress: 80.00% complete, ETA 00:06:49
+
+# Warmup Fork: 2 of 3
+
+# Warmup Iteration   1: 80168.200 ops/s
+
+# Warmup Iteration   2: 81444.089 ops/s
+
+# Warmup Iteration   3: 82446.333 ops/s
+
+# Warmup Iteration   4: 82428.269 ops/s
+
+# Warmup Iteration   5: 82508.569 ops/s
+
+Iteration 1: 82519.540 ops/s
+Iteration 2: 81665.586 ops/s
+Iteration 3: 81983.157 ops/s
+Iteration 4: 81642.738 ops/s
+Iteration 5: 82254.498 ops/s
+
+# Run progress: 85.00% complete, ETA 00:05:07
+
+# Warmup Fork: 3 of 3
+
+# Warmup Iteration   1: 80682.636 ops/s
+
+# Warmup Iteration   2: 81702.064 ops/s
+
+# Warmup Iteration   3: 82148.488 ops/s
+
+# Warmup Iteration   4: 82929.583 ops/s
+
+# Warmup Iteration   5: 81380.835 ops/s
+
+Iteration 1: 78763.602 ops/s
+Iteration 2: 77821.935 ops/s
+Iteration 3: 79087.598 ops/s
+Iteration 4: 75369.507 ops/s
+Iteration 5: 80288.637 ops/s
+
+# Run progress: 90.00% complete, ETA 00:03:24
+
+# Fork: 1 of 2
+
+# Warmup Iteration   1: 80960.927 ops/s
+
+# Warmup Iteration   2: 82516.810 ops/s
+
+# Warmup Iteration   3: 82958.617 ops/s
+
+# Warmup Iteration   4: 82242.205 ops/s
+
+# Warmup Iteration   5: 82364.119 ops/s
+
+Iteration 1: 82850.998 ops/s
+Iteration 2: 82815.640 ops/s
+Iteration 3: 82953.180 ops/s
+Iteration 4: 82963.558 ops/s
+Iteration 5: 83013.742 ops/s
+
+# Run progress: 95.00% complete, ETA 00:01:42
+
+# Fork: 2 of 2
+
+# Warmup Iteration   1: 80805.470 ops/s
+
+# Warmup Iteration   2: 82663.027 ops/s
+
+# Warmup Iteration   3: 82307.387 ops/s
+
+# Warmup Iteration   4: 83243.882 ops/s
+
+# Warmup Iteration   5: 82877.964 ops/s
+
+Iteration 1: 82805.530 ops/s
+Iteration 2: 82711.533 ops/s
+Iteration 3: 82664.503 ops/s
+Iteration 4: 82424.411 ops/s
+Iteration 5: 82314.358 ops/s
+
+Result "io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.simpleTransform":
+82751.745 ±(99.9%) 348.636 ops/s [Average]
+(min, avg, max) = (82314.358, 82751.745, 83013.742), stdev = 230.601
+CI (99.9%): [82403.109, 83100.382] (assumes normal distribution)
+
+# Run complete. Total time: 00:34:09
+
+REMEMBER: The numbers below are just io.github.dhi13man.data. To gain reusable insights, you need to
+follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for
+comparisons.
+
+Benchmark Mode Cnt Score Error Units
+JsonataBenchmarkingTransformer.complexTransform thrpt 10 10775.737 ± 291.191 ops/s
+JsonataBenchmarkingTransformer.simpleTransform thrpt 10 58445.573 ± 2517.663 ops/s
+NativeBenchmarkingTransformer.complexTransform thrpt 10 79412.967 ± 5009.234 ops/s
+NativeBenchmarkingTransformer.simpleTransform thrpt 10 82751.745 ± 348.636 ops/s
+
+Process finished with exit code 0
