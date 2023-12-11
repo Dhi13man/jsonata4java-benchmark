@@ -1372,3 +1372,18 @@ NativeBenchmarkingTransformer.joinTransform avgt 10 ≈ 10⁻⁶ s/op
 NativeBenchmarkingTransformer.simpleTransform avgt 10 ≈ 10⁻⁷ s/op
 
 Process finished with exit code 0
+
+# Results
+
+| Benchmarking Operation                                     | Throughput (ops/s)          | Time (s/op) |
+| ---------------------------------------------------------- | --------------------------- | ----------- |
+| JsonataBenchmarkingTransformer.complexTransform            | 9,907.940 ± 758.472         | 10⁻⁴        |
+| JsonataBenchmarkingTransformer.joinTransform               | 9,972.489 ± 401.232         | 10⁻⁴        |
+| JsonataBenchmarkingTransformer.simpleTransform             | 55,886.950 ± 3,425.360      | 10⁻⁵        |
+| JsonataPrecompiledBenchmarkingTransformer.complexTransform | 56,144.755 ± 6,117.464      | 10⁻⁵        |
+| JsonataPrecompiledBenchmarkingTransformer.joinTransform    | 27,508.089 ± 1,742.277      | 10⁻⁴        |
+| JsonataPrecompiledBenchmarkingTransformer.simpleTransform  | 74,952.342 ± 3,780.782      | 10⁻⁵        |
+| NativeBenchmarkingTransformer.complexTransform             | 3,632,802.799 ± 527,159.058 | 10⁻⁷        |
+| NativeBenchmarkingTransformer.joinTransform                | 1,684,882.695 ± 40,084.917  | 10⁻⁶        |
+| NativeBenchmarkingTransformer.simpleTransform              | 8,079,694.875 ± 847,294.181 | 10⁻⁷        |
+
