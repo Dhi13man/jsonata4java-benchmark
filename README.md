@@ -15,7 +15,7 @@ using [Java Microbenchmark Harness (JMH)](https://github.com/openjdk/jmh)
 As per the benchmarking results,
 
 1. logic implemented natively in Java is between 2 and 3 orders of magnitude faster than
-   the same logic being implemented in Jsonata.
+   the same logic implemented in Jsonata.
 2. The Jsonata precompiled implementation is up to 1 order of magnitude faster than the
    compiled-at-runtime Jsonata implementation.
 3. The Jsonata implementation code is much more repeatable and flexible than the native
