@@ -1,7 +1,7 @@
 # jsonata4java-benchmark
 
-Minimal Benchmarking of [IBM Jsonata4Java](https://github.com/IBM/JSONata4Java) vs doing the same
-work in native java.
+Minimal Benchmarking of [IBM JSONata4Java](https://github.com/IBM/JSONata4Java) vs doing the same
+work in native Java.
 
 This benchmark is implemented
 using [Java Microbenchmark Harness (JMH)](https://github.com/openjdk/jmh)
@@ -24,14 +24,14 @@ The aim was to calculate the average operation time and throughput.
 As per the benchmarking results,
 
 1. logic implemented natively in Java is between 2 and 3 orders of magnitude faster than
-   the same logic implemented in Jsonata.
-2. Jsonata precompiled implementation is up to 1 order of magnitude faster than the
-   compiled-at-runtime Jsonata implementation.
-3. Jsonata implementation code is much more repeatable and flexible than the native
+   the same logic implemented in JSONata.
+2. JSONata precompiled implementation is up to 1 order of magnitude faster than the
+   compiled-at-runtime JSONata implementation.
+3. JSONata implementation code is much more repeatable and flexible than the native
    implementation.
 
 ### Summary
 
-Despite Jsonata seeming much slower than native implementation, most systems are not going to be
-doing this order of magnitude of processing anyway. So, the Jsonata implementation is a good choice
+Despite JSONata seeming much slower than native implementation, most systems are not going to be
+doing this order of magnitude of processing anyway. So, the JSONata implementation is a good choice
 for most systems, because of its flexibility.
