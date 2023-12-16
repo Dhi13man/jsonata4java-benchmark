@@ -1,5 +1,5 @@
 <project>
-  <artifactId>jsonata4java-benchmarking</artifactId>
+  <artifactId>jsonata4java-benchmark</artifactId>
   <build>
     <plugins>
       <plugin>
@@ -70,7 +70,7 @@
   </dependencies>
   <groupId>io.github.dhi13man</groupId>
   <modelVersion>4.0.0</modelVersion>
-  <name>jsonata4java-benchmarking</name>
+  <name>jsonata4java-benchmark</name>
   <packaging>pom</packaging>
   <version>1.0</version>
 </project>

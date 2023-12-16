@@ -1,0 +1,2246 @@
+/Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/dhimanseal/Desktop/projects/jsonata4java-benchmarking/out/production/jsonata4java-benchmark:/Users/dhimanseal/.m2/repository/com/ibm/jsonata4java/JSONata4Java/2.4.5/JSONata4Java-2.4.5.jar:/Users/dhimanseal/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/dhimanseal/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.5.1/woodstox-core-6.5.1.jar:/Users/dhimanseal/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/Users/dhimanseal/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.15.2/jackson-dataformat-xml-2.15.2.jar:/Users/dhimanseal/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/Users/dhimanseal/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/dhimanseal/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/dhimanseal/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/dhimanseal/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/dhimanseal/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/dhimanseal/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar:/Users/dhimanseal/.m2/repository/org/springframework/spring-web/6.0.6/spring-web-6.0.6.jar:/Users/dhimanseal/.m2/repository/org/springframework/spring-beans/6.0.6/spring-beans-6.0.6.jar:/Users/dhimanseal/.m2/repository/org/springframework/spring-core/6.0.6/spring-core-6.0.6.jar:/Users/dhimanseal/.m2/repository/org/springframework/spring-jcl/6.0.6/spring-jcl-6.0.6.jar:/Users/dhimanseal/.m2/repository/io/micrometer/micrometer-observation/1.10.4/micrometer-observation-1.10.4.jar:/Users/dhimanseal/.m2/repository/io/micrometer/micrometer-commons/1.10.4/micrometer-commons-1.10.4.jar:/Users/dhimanseal/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/dhimanseal/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/dhimanseal/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/dhimanseal/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/dhimanseal/.m2/repository/org/jetbrains/annotations-java5/24.0.1/annotations-java5-24.0.1.jar:/Users/dhimanseal/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/dhimanseal/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/dhimanseal/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/dhimanseal/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/dhimanseal/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/dhimanseal/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/dhimanseal/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/dhimanseal/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar io.github.dhi13man.JsonataBenchmarkingRunner
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.complexTransform
+
+# Run progress: 0.00% complete, ETA 04:00:00
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: 9073.533 ops/s
+# Warmup Iteration   2: 9437.724 ops/s
+# Warmup Iteration   3: 9781.342 ops/s
+# Warmup Iteration   4: 9647.087 ops/s
+# Warmup Iteration   5: 8763.141 ops/s
+Iteration   1: 9572.517 ops/s
+Iteration   2: 9467.550 ops/s
+Iteration   3: 9085.064 ops/s
+Iteration   4: 9108.070 ops/s
+Iteration   5: 9551.735 ops/s
+
+# Run progress: 0.69% complete, ETA 04:07:16
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: 8618.556 ops/s
+# Warmup Iteration   2: 9181.811 ops/s
+# Warmup Iteration   3: 8952.623 ops/s
+# Warmup Iteration   4: 9660.221 ops/s
+# Warmup Iteration   5: 8808.504 ops/s
+Iteration   1: 9162.793 ops/s
+Iteration   2: 9480.500 ops/s
+Iteration   3: 9906.784 ops/s
+Iteration   4: 9953.697 ops/s
+Iteration   5: 8931.186 ops/s
+
+# Run progress: 1.39% complete, ETA 04:07:58
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: 8807.088 ops/s
+# Warmup Iteration   2: 9468.194 ops/s
+# Warmup Iteration   3: 9857.639 ops/s
+# Warmup Iteration   4: 9780.543 ops/s
+# Warmup Iteration   5: 9263.148 ops/s
+Iteration   1: 8799.319 ops/s
+Iteration   2: 8464.511 ops/s
+Iteration   3: 9666.162 ops/s
+Iteration   4: 9488.044 ops/s
+Iteration   5: 9364.920 ops/s
+
+# Run progress: 2.08% complete, ETA 04:05:12
+# Fork: 1 of 5
+# Warmup Iteration   1: 8422.105 ops/s
+# Warmup Iteration   2: 9685.759 ops/s
+# Warmup Iteration   3: 9342.088 ops/s
+# Warmup Iteration   4: 9206.051 ops/s
+# Warmup Iteration   5: 9330.036 ops/s
+Iteration   1: 9651.674 ops/s
+Iteration   2: 9607.925 ops/s
+Iteration   3: 9372.205 ops/s
+Iteration   4: 9894.847 ops/s
+Iteration   5: 9290.783 ops/s
+
+# Run progress: 2.78% complete, ETA 04:03:03
+# Fork: 2 of 5
+# Warmup Iteration   1: 8984.495 ops/s
+# Warmup Iteration   2: 9910.395 ops/s
+# Warmup Iteration   3: 9767.648 ops/s
+# Warmup Iteration   4: 9701.803 ops/s
+# Warmup Iteration   5: 9560.932 ops/s
+Iteration   1: 9790.432 ops/s
+Iteration   2: 9568.317 ops/s
+Iteration   3: 9783.737 ops/s
+Iteration   4: 9507.024 ops/s
+Iteration   5: 8886.137 ops/s
+
+# Run progress: 3.47% complete, ETA 04:01:02
+# Fork: 3 of 5
+# Warmup Iteration   1: 7642.099 ops/s
+# Warmup Iteration   2: 9155.700 ops/s
+# Warmup Iteration   3: 9852.041 ops/s
+# Warmup Iteration   4: 9765.204 ops/s
+# Warmup Iteration   5: 10020.399 ops/s
+Iteration   1: 9163.635 ops/s
+Iteration   2: 9579.334 ops/s
+Iteration   3: 10000.703 ops/s
+Iteration   4: 10069.446 ops/s
+Iteration   5: 9604.837 ops/s
+
+# Run progress: 4.17% complete, ETA 04:00:03
+# Fork: 4 of 5
+# Warmup Iteration   1: 8358.263 ops/s
+# Warmup Iteration   2: 9746.815 ops/s
+# Warmup Iteration   3: 9538.871 ops/s
+# Warmup Iteration   4: 9851.159 ops/s
+# Warmup Iteration   5: 10074.543 ops/s
+Iteration   1: 9834.317 ops/s
+Iteration   2: 9984.939 ops/s
+Iteration   3: 9475.359 ops/s
+Iteration   4: 9848.619 ops/s
+Iteration   5: 9872.330 ops/s
+
+# Run progress: 4.86% complete, ETA 03:58:03
+# Fork: 5 of 5
+# Warmup Iteration   1: 7628.826 ops/s
+# Warmup Iteration   2: 9217.450 ops/s
+# Warmup Iteration   3: 9811.038 ops/s
+# Warmup Iteration   4: 8269.620 ops/s
+# Warmup Iteration   5: 9363.306 ops/s
+Iteration   1: 9586.844 ops/s
+Iteration   2: 9601.476 ops/s
+Iteration   3: 9249.048 ops/s
+Iteration   4: 9932.381 ops/s
+Iteration   5: 8890.083 ops/s
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.complexTransform":
+  9601.857 ±(99.9%) 241.308 ops/s [Average]
+  (min, avg, max) = (8886.137, 9601.857, 10069.446), stdev = 322.139
+  CI (99.9%): [9360.550, 9843.165] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.joinTransform
+
+# Run progress: 5.56% complete, ETA 03:56:08
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: 9796.956 ops/s
+# Warmup Iteration   2: 9447.625 ops/s
+# Warmup Iteration   3: 9790.922 ops/s
+# Warmup Iteration   4: 10070.987 ops/s
+# Warmup Iteration   5: 9803.266 ops/s
+Iteration   1: 9542.168 ops/s
+Iteration   2: 9881.472 ops/s
+Iteration   3: 10561.747 ops/s
+Iteration   4: 9916.913 ops/s
+Iteration   5: 10250.822 ops/s
+
+# Run progress: 6.25% complete, ETA 03:54:16
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: 9263.121 ops/s
+# Warmup Iteration   2: 10287.322 ops/s
+# Warmup Iteration   3: 10193.523 ops/s
+# Warmup Iteration   4: 9806.126 ops/s
+# Warmup Iteration   5: 9962.251 ops/s
+Iteration   1: 10321.803 ops/s
+Iteration   2: 10432.153 ops/s
+Iteration   3: 9950.438 ops/s
+Iteration   4: 9404.641 ops/s
+Iteration   5: 9754.144 ops/s
+
+# Run progress: 6.94% complete, ETA 03:52:26
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: 7439.807 ops/s
+# Warmup Iteration   2: 9312.120 ops/s
+# Warmup Iteration   3: 9034.016 ops/s
+# Warmup Iteration   4: 10024.780 ops/s
+# Warmup Iteration   5: 9653.971 ops/s
+Iteration   1: 9295.232 ops/s
+Iteration   2: 9578.002 ops/s
+Iteration   3: 9891.593 ops/s
+Iteration   4: 9590.271 ops/s
+Iteration   5: 9489.361 ops/s
+
+# Run progress: 7.64% complete, ETA 03:50:41
+# Fork: 1 of 5
+# Warmup Iteration   1: 9611.445 ops/s
+# Warmup Iteration   2: 9986.821 ops/s
+# Warmup Iteration   3: 10183.223 ops/s
+# Warmup Iteration   4: 10254.121 ops/s
+# Warmup Iteration   5: 10426.779 ops/s
+Iteration   1: 9578.251 ops/s
+Iteration   2: 9209.432 ops/s
+Iteration   3: 8535.003 ops/s
+Iteration   4: 9697.073 ops/s
+Iteration   5: 10084.158 ops/s
+
+# Run progress: 8.33% complete, ETA 03:48:52
+# Fork: 2 of 5
+# Warmup Iteration   1: 8889.111 ops/s
+# Warmup Iteration   2: 10213.722 ops/s
+# Warmup Iteration   3: 9690.867 ops/s
+# Warmup Iteration   4: 9063.618 ops/s
+# Warmup Iteration   5: 10155.819 ops/s
+Iteration   1: 9720.158 ops/s
+Iteration   2: 8911.031 ops/s
+Iteration   3: 9765.884 ops/s
+Iteration   4: 9875.064 ops/s
+Iteration   5: 9882.100 ops/s
+
+# Run progress: 9.03% complete, ETA 03:47:06
+# Fork: 3 of 5
+# Warmup Iteration   1: 8583.496 ops/s
+# Warmup Iteration   2: 9487.288 ops/s
+# Warmup Iteration   3: 10436.014 ops/s
+# Warmup Iteration   4: 9983.659 ops/s
+# Warmup Iteration   5: 9430.758 ops/s
+Iteration   1: 10465.783 ops/s
+Iteration   2: 9904.362 ops/s
+Iteration   3: 9670.411 ops/s
+Iteration   4: 10438.701 ops/s
+Iteration   5: 10430.842 ops/s
+
+# Run progress: 9.72% complete, ETA 03:45:18
+# Fork: 4 of 5
+# Warmup Iteration   1: 8547.824 ops/s
+# Warmup Iteration   2: 9864.184 ops/s
+# Warmup Iteration   3: 9838.713 ops/s
+# Warmup Iteration   4: 10049.958 ops/s
+# Warmup Iteration   5: 9391.957 ops/s
+Iteration   1: 9588.402 ops/s
+Iteration   2: 10439.076 ops/s
+Iteration   3: 9859.581 ops/s
+Iteration   4: 10037.451 ops/s
+Iteration   5: 10832.380 ops/s
+
+# Run progress: 10.42% complete, ETA 03:43:32
+# Fork: 5 of 5
+# Warmup Iteration   1: 10043.778 ops/s
+# Warmup Iteration   2: 10750.940 ops/s
+# Warmup Iteration   3: 10429.870 ops/s
+# Warmup Iteration   4: 10480.621 ops/s
+# Warmup Iteration   5: 10672.785 ops/s
+Iteration   1: 10830.293 ops/s
+Iteration   2: 10700.961 ops/s
+Iteration   3: 10770.156 ops/s
+Iteration   4: 10607.881 ops/s
+Iteration   5: 10810.374 ops/s
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.joinTransform":
+  10025.792 ±(99.9%) 457.922 ops/s [Average]
+  (min, avg, max) = (8535.003, 10025.792, 10832.380), stdev = 611.313
+  CI (99.9%): [9567.871, 10483.714] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.simpleTransform
+
+# Run progress: 11.11% complete, ETA 03:41:46
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: 51213.582 ops/s
+# Warmup Iteration   2: 49332.038 ops/s
+# Warmup Iteration   3: 53032.148 ops/s
+# Warmup Iteration   4: 51654.344 ops/s
+# Warmup Iteration   5: 54467.979 ops/s
+Iteration   1: 54847.133 ops/s
+Iteration   2: 53702.004 ops/s
+Iteration   3: 54388.824 ops/s
+Iteration   4: 54562.296 ops/s
+Iteration   5: 54066.155 ops/s
+
+# Run progress: 11.81% complete, ETA 03:39:58
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: 45610.904 ops/s
+# Warmup Iteration   2: 50717.682 ops/s
+# Warmup Iteration   3: 53214.906 ops/s
+# Warmup Iteration   4: 55326.811 ops/s
+# Warmup Iteration   5: 54891.184 ops/s
+Iteration   1: 54470.032 ops/s
+Iteration   2: 51965.761 ops/s
+Iteration   3: 54498.471 ops/s
+Iteration   4: 54185.410 ops/s
+Iteration   5: 53084.164 ops/s
+
+# Run progress: 12.50% complete, ETA 03:38:12
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: 45301.324 ops/s
+# Warmup Iteration   2: 54354.556 ops/s
+# Warmup Iteration   3: 52864.845 ops/s
+# Warmup Iteration   4: 52825.791 ops/s
+# Warmup Iteration   5: 54647.571 ops/s
+Iteration   1: 53756.640 ops/s
+Iteration   2: 51281.759 ops/s
+Iteration   3: 55242.992 ops/s
+Iteration   4: 53467.804 ops/s
+Iteration   5: 50833.455 ops/s
+
+# Run progress: 13.19% complete, ETA 03:36:26
+# Fork: 1 of 5
+# Warmup Iteration   1: 48752.413 ops/s
+# Warmup Iteration   2: 51470.677 ops/s
+# Warmup Iteration   3: 53958.050 ops/s
+# Warmup Iteration   4: 56000.705 ops/s
+# Warmup Iteration   5: 53946.111 ops/s
+Iteration   1: 53421.356 ops/s
+Iteration   2: 55659.212 ops/s
+Iteration   3: 54944.063 ops/s
+Iteration   4: 50464.705 ops/s
+Iteration   5: 50101.963 ops/s
+
+# Run progress: 13.89% complete, ETA 03:34:41
+# Fork: 2 of 5
+# Warmup Iteration   1: 48511.388 ops/s
+# Warmup Iteration   2: 52285.453 ops/s
+# Warmup Iteration   3: 54852.733 ops/s
+# Warmup Iteration   4: 55042.339 ops/s
+# Warmup Iteration   5: 51980.462 ops/s
+Iteration   1: 55531.758 ops/s
+Iteration   2: 55057.834 ops/s
+Iteration   3: 55068.584 ops/s
+Iteration   4: 54314.815 ops/s
+Iteration   5: 51921.035 ops/s
+
+# Run progress: 14.58% complete, ETA 03:32:59
+# Fork: 3 of 5
+# Warmup Iteration   1: 46050.663 ops/s
+# Warmup Iteration   2: 51922.009 ops/s
+# Warmup Iteration   3: 54867.106 ops/s
+# Warmup Iteration   4: 54168.585 ops/s
+# Warmup Iteration   5: 54659.129 ops/s
+Iteration   1: 50148.403 ops/s
+Iteration   2: 51837.892 ops/s
+Iteration   3: 50538.462 ops/s
+Iteration   4: 52880.022 ops/s
+Iteration   5: 55174.020 ops/s
+
+# Run progress: 15.28% complete, ETA 03:31:13
+# Fork: 4 of 5
+# Warmup Iteration   1: 41312.690 ops/s
+# Warmup Iteration   2: 49531.576 ops/s
+# Warmup Iteration   3: 51745.202 ops/s
+# Warmup Iteration   4: 52743.508 ops/s
+# Warmup Iteration   5: 56805.768 ops/s
+Iteration   1: 56476.224 ops/s
+Iteration   2: 57384.797 ops/s
+Iteration   3: 55620.005 ops/s
+Iteration   4: 54453.959 ops/s
+Iteration   5: 55287.643 ops/s
+
+# Run progress: 15.97% complete, ETA 03:29:27
+# Fork: 5 of 5
+# Warmup Iteration   1: 44465.811 ops/s
+# Warmup Iteration   2: 54921.859 ops/s
+# Warmup Iteration   3: 54688.302 ops/s
+# Warmup Iteration   4: 50963.260 ops/s
+# Warmup Iteration   5: 51532.420 ops/s
+Iteration   1: 50262.518 ops/s
+Iteration   2: 50651.122 ops/s
+Iteration   3: 52655.170 ops/s
+Iteration   4: 53834.604 ops/s
+Iteration   5: 51572.285 ops/s
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.simpleTransform":
+  53410.498 ±(99.9%) 1682.844 ops/s [Average]
+  (min, avg, max) = (50101.963, 53410.498, 57384.797), stdev = 2246.549
+  CI (99.9%): [51727.654, 55093.342] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.complexTransform
+
+# Run progress: 16.67% complete, ETA 03:27:42
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: 55844.891 ops/s
+# Warmup Iteration   2: 57529.032 ops/s
+# Warmup Iteration   3: 58562.972 ops/s
+# Warmup Iteration   4: 59947.088 ops/s
+# Warmup Iteration   5: 55689.058 ops/s
+Iteration   1: 54768.984 ops/s
+Iteration   2: 58404.436 ops/s
+Iteration   3: 59559.574 ops/s
+Iteration   4: 57789.808 ops/s
+Iteration   5: 56056.514 ops/s
+
+# Run progress: 17.36% complete, ETA 03:26:02
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: 51151.987 ops/s
+# Warmup Iteration   2: 52360.847 ops/s
+# Warmup Iteration   3: 56733.400 ops/s
+# Warmup Iteration   4: 57524.764 ops/s
+# Warmup Iteration   5: 57481.635 ops/s
+Iteration   1: 53461.247 ops/s
+Iteration   2: 55182.881 ops/s
+Iteration   3: 57768.533 ops/s
+Iteration   4: 46569.316 ops/s
+Iteration   5: 55833.108 ops/s
+
+# Run progress: 18.06% complete, ETA 03:24:18
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: 51860.548 ops/s
+# Warmup Iteration   2: 55307.696 ops/s
+# Warmup Iteration   3: 54999.560 ops/s
+# Warmup Iteration   4: 53524.169 ops/s
+# Warmup Iteration   5: 58014.323 ops/s
+Iteration   1: 56629.483 ops/s
+Iteration   2: 56340.680 ops/s
+Iteration   3: 55628.336 ops/s
+Iteration   4: 55729.723 ops/s
+Iteration   5: 56635.423 ops/s
+
+# Run progress: 18.75% complete, ETA 03:22:33
+# Fork: 1 of 5
+# Warmup Iteration   1: 52081.149 ops/s
+# Warmup Iteration   2: 58361.711 ops/s
+# Warmup Iteration   3: 55245.759 ops/s
+# Warmup Iteration   4: 53466.626 ops/s
+# Warmup Iteration   5: 56061.969 ops/s
+Iteration   1: 54367.836 ops/s
+Iteration   2: 57673.677 ops/s
+Iteration   3: 54166.710 ops/s
+Iteration   4: 57588.771 ops/s
+Iteration   5: 53451.874 ops/s
+
+# Run progress: 19.44% complete, ETA 03:20:48
+# Fork: 2 of 5
+# Warmup Iteration   1: 54644.728 ops/s
+# Warmup Iteration   2: 55094.290 ops/s
+# Warmup Iteration   3: 57328.251 ops/s
+# Warmup Iteration   4: 58135.213 ops/s
+# Warmup Iteration   5: 58366.871 ops/s
+Iteration   1: 56908.382 ops/s
+Iteration   2: 55665.395 ops/s
+Iteration   3: 54266.563 ops/s
+Iteration   4: 56966.759 ops/s
+Iteration   5: 55354.178 ops/s
+
+# Run progress: 20.14% complete, ETA 03:19:04
+# Fork: 3 of 5
+# Warmup Iteration   1: 53606.500 ops/s
+# Warmup Iteration   2: 57728.414 ops/s
+# Warmup Iteration   3: 55214.036 ops/s
+# Warmup Iteration   4: 56885.612 ops/s
+# Warmup Iteration   5: 57042.174 ops/s
+Iteration   1: 57616.305 ops/s
+Iteration   2: 58082.520 ops/s
+Iteration   3: 57440.920 ops/s
+Iteration   4: 58075.788 ops/s
+Iteration   5: 58173.183 ops/s
+
+# Run progress: 20.83% complete, ETA 03:17:21
+# Fork: 4 of 5
+# Warmup Iteration   1: 52896.135 ops/s
+# Warmup Iteration   2: 59362.675 ops/s
+# Warmup Iteration   3: 58496.133 ops/s
+# Warmup Iteration   4: 59345.635 ops/s
+# Warmup Iteration   5: 52984.194 ops/s
+Iteration   1: 57746.023 ops/s
+Iteration   2: 51232.105 ops/s
+Iteration   3: 48382.593 ops/s
+Iteration   4: 56106.612 ops/s
+Iteration   5: 55635.726 ops/s
+
+# Run progress: 21.53% complete, ETA 03:15:36
+# Fork: 5 of 5
+# Warmup Iteration   1: 52219.987 ops/s
+# Warmup Iteration   2: 53697.807 ops/s
+# Warmup Iteration   3: 56468.892 ops/s
+# Warmup Iteration   4: 56978.381 ops/s
+# Warmup Iteration   5: 53775.534 ops/s
+Iteration   1: 54720.586 ops/s
+Iteration   2: 55255.793 ops/s
+Iteration   3: 54250.632 ops/s
+Iteration   4: 55590.716 ops/s
+Iteration   5: 55203.897 ops/s
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.complexTransform":
+  55596.942 ±(99.9%) 1724.073 ops/s [Average]
+  (min, avg, max) = (48382.593, 55596.942, 58173.183), stdev = 2301.588
+  CI (99.9%): [53872.869, 57321.015] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.joinTransform
+
+# Run progress: 22.22% complete, ETA 03:13:52
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: 24900.180 ops/s
+# Warmup Iteration   2: 24626.795 ops/s
+# Warmup Iteration   3: 24461.654 ops/s
+# Warmup Iteration   4: 25935.311 ops/s
+# Warmup Iteration   5: 25666.220 ops/s
+Iteration   1: 26809.556 ops/s
+Iteration   2: 26897.413 ops/s
+Iteration   3: 26630.621 ops/s
+Iteration   4: 25980.233 ops/s
+Iteration   5: 26815.126 ops/s
+
+# Run progress: 22.92% complete, ETA 03:12:07
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: 25410.335 ops/s
+# Warmup Iteration   2: 22878.595 ops/s
+# Warmup Iteration   3: 25628.047 ops/s
+# Warmup Iteration   4: 25055.422 ops/s
+# Warmup Iteration   5: 27007.185 ops/s
+Iteration   1: 26998.298 ops/s
+Iteration   2: 26680.612 ops/s
+Iteration   3: 24835.899 ops/s
+Iteration   4: 25501.809 ops/s
+Iteration   5: 23969.553 ops/s
+
+# Run progress: 23.61% complete, ETA 03:10:24
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: 25274.485 ops/s
+# Warmup Iteration   2: 25935.464 ops/s
+# Warmup Iteration   3: 25636.624 ops/s
+# Warmup Iteration   4: 26357.981 ops/s
+# Warmup Iteration   5: 24846.325 ops/s
+Iteration   1: 24883.599 ops/s
+Iteration   2: 26738.103 ops/s
+Iteration   3: 27343.338 ops/s
+Iteration   4: 24899.917 ops/s
+Iteration   5: 27286.616 ops/s
+
+# Run progress: 24.31% complete, ETA 03:08:49
+# Fork: 1 of 5
+# Warmup Iteration   1: 27441.509 ops/s
+# Warmup Iteration   2: 28349.051 ops/s
+# Warmup Iteration   3: 27854.923 ops/s
+# Warmup Iteration   4: 28580.349 ops/s
+# Warmup Iteration   5: 28211.519 ops/s
+Iteration   1: 28473.662 ops/s
+Iteration   2: 28065.962 ops/s
+Iteration   3: 28595.403 ops/s
+Iteration   4: 28367.935 ops/s
+Iteration   5: 28289.303 ops/s
+
+# Run progress: 25.00% complete, ETA 03:07:04
+# Fork: 2 of 5
+# Warmup Iteration   1: 27079.807 ops/s
+# Warmup Iteration   2: 26920.605 ops/s
+# Warmup Iteration   3: 26653.595 ops/s
+# Warmup Iteration   4: 28032.952 ops/s
+# Warmup Iteration   5: 28229.014 ops/s
+Iteration   1: 27132.826 ops/s
+Iteration   2: 27624.416 ops/s
+Iteration   3: 27957.121 ops/s
+Iteration   4: 27651.211 ops/s
+Iteration   5: 26293.731 ops/s
+
+# Run progress: 25.69% complete, ETA 03:05:19
+# Fork: 3 of 5
+# Warmup Iteration   1: 25511.210 ops/s
+# Warmup Iteration   2: 24711.001 ops/s
+# Warmup Iteration   3: 25885.542 ops/s
+# Warmup Iteration   4: 25185.835 ops/s
+# Warmup Iteration   5: 26386.357 ops/s
+Iteration   1: 26577.098 ops/s
+Iteration   2: 26469.579 ops/s
+Iteration   3: 25060.730 ops/s
+Iteration   4: 26867.763 ops/s
+Iteration   5: 27430.108 ops/s
+
+# Run progress: 26.39% complete, ETA 03:03:35
+# Fork: 4 of 5
+# Warmup Iteration   1: 26569.769 ops/s
+# Warmup Iteration   2: 27492.373 ops/s
+# Warmup Iteration   3: 25910.309 ops/s
+# Warmup Iteration   4: 26325.625 ops/s
+# Warmup Iteration   5: 27623.324 ops/s
+Iteration   1: 27280.069 ops/s
+Iteration   2: 27795.673 ops/s
+Iteration   3: 27728.191 ops/s
+Iteration   4: 26872.284 ops/s
+Iteration   5: 27561.095 ops/s
+
+# Run progress: 27.08% complete, ETA 03:01:51
+# Fork: 5 of 5
+# Warmup Iteration   1: 26577.006 ops/s
+# Warmup Iteration   2: 27043.738 ops/s
+# Warmup Iteration   3: 27409.981 ops/s
+# Warmup Iteration   4: 27011.870 ops/s
+# Warmup Iteration   5: 26654.621 ops/s
+Iteration   1: 27165.185 ops/s
+Iteration   2: 27497.678 ops/s
+Iteration   3: 27334.283 ops/s
+Iteration   4: 27461.214 ops/s
+Iteration   5: 27061.953 ops/s
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.joinTransform":
+  27384.579 ±(99.9%) 582.957 ops/s [Average]
+  (min, avg, max) = (25060.730, 27384.579, 28595.403), stdev = 778.231
+  CI (99.9%): [26801.622, 27967.536] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.simpleTransform
+
+# Run progress: 27.78% complete, ETA 03:00:06
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: 72075.814 ops/s
+# Warmup Iteration   2: 74963.646 ops/s
+# Warmup Iteration   3: 75242.744 ops/s
+# Warmup Iteration   4: 75354.094 ops/s
+# Warmup Iteration   5: 75342.623 ops/s
+Iteration   1: 75605.053 ops/s
+Iteration   2: 73595.355 ops/s
+Iteration   3: 75009.530 ops/s
+Iteration   4: 75216.338 ops/s
+Iteration   5: 74987.262 ops/s
+
+# Run progress: 28.47% complete, ETA 02:58:21
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: 73312.550 ops/s
+# Warmup Iteration   2: 73375.898 ops/s
+# Warmup Iteration   3: 73452.164 ops/s
+# Warmup Iteration   4: 73784.543 ops/s
+# Warmup Iteration   5: 73630.043 ops/s
+Iteration   1: 75501.743 ops/s
+Iteration   2: 75786.794 ops/s
+Iteration   3: 75817.296 ops/s
+Iteration   4: 74832.196 ops/s
+Iteration   5: 74988.560 ops/s
+
+# Run progress: 29.17% complete, ETA 02:56:36
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: 71085.012 ops/s
+# Warmup Iteration   2: 73283.165 ops/s
+# Warmup Iteration   3: 73039.811 ops/s
+# Warmup Iteration   4: 72544.877 ops/s
+# Warmup Iteration   5: 73069.299 ops/s
+Iteration   1: 71945.259 ops/s
+Iteration   2: 72578.340 ops/s
+Iteration   3: 73719.126 ops/s
+Iteration   4: 72698.284 ops/s
+Iteration   5: 71886.751 ops/s
+
+# Run progress: 29.86% complete, ETA 02:54:52
+# Fork: 1 of 5
+# Warmup Iteration   1: 68690.205 ops/s
+# Warmup Iteration   2: 71179.000 ops/s
+# Warmup Iteration   3: 70952.835 ops/s
+# Warmup Iteration   4: 70294.794 ops/s
+# Warmup Iteration   5: 71334.248 ops/s
+Iteration   1: 70385.728 ops/s
+Iteration   2: 70569.955 ops/s
+Iteration   3: 69538.872 ops/s
+Iteration   4: 70774.399 ops/s
+Iteration   5: 70096.274 ops/s
+
+# Run progress: 30.56% complete, ETA 02:53:08
+# Fork: 2 of 5
+# Warmup Iteration   1: 71596.844 ops/s
+# Warmup Iteration   2: 73063.515 ops/s
+# Warmup Iteration   3: 73232.013 ops/s
+# Warmup Iteration   4: 72177.719 ops/s
+# Warmup Iteration   5: 72524.432 ops/s
+Iteration   1: 72676.746 ops/s
+Iteration   2: 73513.952 ops/s
+Iteration   3: 71056.817 ops/s
+Iteration   4: 72145.971 ops/s
+Iteration   5: 72424.920 ops/s
+
+# Run progress: 31.25% complete, ETA 02:51:23
+# Fork: 3 of 5
+# Warmup Iteration   1: 68258.275 ops/s
+# Warmup Iteration   2: 70073.456 ops/s
+# Warmup Iteration   3: 69913.972 ops/s
+# Warmup Iteration   4: 71051.833 ops/s
+# Warmup Iteration   5: 70528.647 ops/s
+Iteration   1: 70660.472 ops/s
+Iteration   2: 71283.259 ops/s
+Iteration   3: 70632.624 ops/s
+Iteration   4: 69485.192 ops/s
+Iteration   5: 70064.505 ops/s
+
+# Run progress: 31.94% complete, ETA 02:49:39
+# Fork: 4 of 5
+# Warmup Iteration   1: 66808.880 ops/s
+# Warmup Iteration   2: 67600.476 ops/s
+# Warmup Iteration   3: 67487.725 ops/s
+# Warmup Iteration   4: 68844.546 ops/s
+# Warmup Iteration   5: 67672.840 ops/s
+Iteration   1: 67323.157 ops/s
+Iteration   2: 67562.251 ops/s
+Iteration   3: 66147.542 ops/s
+Iteration   4: 64651.436 ops/s
+Iteration   5: 64569.408 ops/s
+
+# Run progress: 32.64% complete, ETA 02:47:56
+# Fork: 5 of 5
+# Warmup Iteration   1: 68017.273 ops/s
+# Warmup Iteration   2: 69014.673 ops/s
+# Warmup Iteration   3: 70409.771 ops/s
+# Warmup Iteration   4: 67680.202 ops/s
+# Warmup Iteration   5: 69513.393 ops/s
+Iteration   1: 67397.159 ops/s
+Iteration   2: 66914.242 ops/s
+Iteration   3: 65860.440 ops/s
+Iteration   4: 67969.972 ops/s
+Iteration   5: 67829.550 ops/s
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.simpleTransform":
+  69261.394 ±(99.9%) 1871.680 ops/s [Average]
+  (min, avg, max) = (64569.408, 69261.394, 73513.952), stdev = 2498.639
+  CI (99.9%): [67389.714, 71133.074] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.complexTransform
+
+# Run progress: 33.33% complete, ETA 02:46:13
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: 3757373.478 ops/s
+# Warmup Iteration   2: 3441647.569 ops/s
+# Warmup Iteration   3: 3373430.991 ops/s
+# Warmup Iteration   4: 3876684.811 ops/s
+# Warmup Iteration   5: 3907212.187 ops/s
+Iteration   1: 3896140.294 ops/s
+Iteration   2: 3826249.189 ops/s
+Iteration   3: 3757408.914 ops/s
+Iteration   4: 3913858.258 ops/s
+Iteration   5: 3946632.158 ops/s
+
+# Run progress: 34.03% complete, ETA 02:44:28
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: 3556614.659 ops/s
+# Warmup Iteration   2: 3921320.236 ops/s
+# Warmup Iteration   3: 3890459.334 ops/s
+# Warmup Iteration   4: 3839781.596 ops/s
+# Warmup Iteration   5: 3714533.051 ops/s
+Iteration   1: 3877594.192 ops/s
+Iteration   2: 3877431.340 ops/s
+Iteration   3: 3880819.985 ops/s
+Iteration   4: 3501032.440 ops/s
+Iteration   5: 3879200.244 ops/s
+
+# Run progress: 34.72% complete, ETA 02:42:44
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: 3828533.119 ops/s
+# Warmup Iteration   2: 3874956.922 ops/s
+# Warmup Iteration   3: 3837732.851 ops/s
+# Warmup Iteration   4: 3841216.158 ops/s
+# Warmup Iteration   5: 3791232.566 ops/s
+Iteration   1: 3789781.097 ops/s
+Iteration   2: 3735750.612 ops/s
+Iteration   3: 3838806.107 ops/s
+Iteration   4: 3735944.076 ops/s
+Iteration   5: 3758198.396 ops/s
+
+# Run progress: 35.42% complete, ETA 02:40:58
+# Fork: 1 of 5
+# Warmup Iteration   1: 3702683.368 ops/s
+# Warmup Iteration   2: 3845530.180 ops/s
+# Warmup Iteration   3: 3953743.123 ops/s
+# Warmup Iteration   4: 3942339.804 ops/s
+# Warmup Iteration   5: 3952183.756 ops/s
+Iteration   1: 3965582.581 ops/s
+Iteration   2: 3812709.495 ops/s
+Iteration   3: 3958320.673 ops/s
+Iteration   4: 3660071.167 ops/s
+Iteration   5: 3880918.076 ops/s
+
+# Run progress: 36.11% complete, ETA 02:39:14
+# Fork: 2 of 5
+# Warmup Iteration   1: 3889699.218 ops/s
+# Warmup Iteration   2: 3863581.840 ops/s
+# Warmup Iteration   3: 3879119.710 ops/s
+# Warmup Iteration   4: 3861512.967 ops/s
+# Warmup Iteration   5: 3685148.820 ops/s
+Iteration   1: 3707384.159 ops/s
+Iteration   2: 3638228.582 ops/s
+Iteration   3: 3689131.201 ops/s
+Iteration   4: 3683816.269 ops/s
+Iteration   5: 3827368.391 ops/s
+
+# Run progress: 36.81% complete, ETA 02:37:29
+# Fork: 3 of 5
+# Warmup Iteration   1: 3802295.888 ops/s
+# Warmup Iteration   2: 3798621.755 ops/s
+# Warmup Iteration   3: 3917807.335 ops/s
+# Warmup Iteration   4: 3426402.938 ops/s
+# Warmup Iteration   5: 3836039.503 ops/s
+Iteration   1: 3654287.034 ops/s
+Iteration   2: 3762889.821 ops/s
+Iteration   3: 3696296.725 ops/s
+Iteration   4: 3947089.048 ops/s
+Iteration   5: 3693338.761 ops/s
+
+# Run progress: 37.50% complete, ETA 02:35:44
+# Fork: 4 of 5
+# Warmup Iteration   1: 3840517.060 ops/s
+# Warmup Iteration   2: 3212601.486 ops/s
+# Warmup Iteration   3: 2850999.295 ops/s
+# Warmup Iteration   4: 2636579.482 ops/s
+# Warmup Iteration   5: 2952830.604 ops/s
+Iteration   1: 2466228.317 ops/s
+Iteration   2: 3261393.286 ops/s
+Iteration   3: 3247507.919 ops/s
+Iteration   4: 3228511.877 ops/s
+Iteration   5: 3368190.519 ops/s
+
+# Run progress: 38.19% complete, ETA 02:33:59
+# Fork: 5 of 5
+# Warmup Iteration   1: 3124472.284 ops/s
+# Warmup Iteration   2: 2873592.671 ops/s
+# Warmup Iteration   3: 1997579.277 ops/s
+# Warmup Iteration   4: 2932226.639 ops/s
+# Warmup Iteration   5: 3124811.726 ops/s
+Iteration   1: 3176079.167 ops/s
+Iteration   2: 3159234.482 ops/s
+Iteration   3: 3116451.300 ops/s
+Iteration   4: 3261529.338 ops/s
+Iteration   5: 3283863.874 ops/s
+
+
+Result "io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.complexTransform":
+  3525856.882 ±(99.9%) 266527.829 ops/s [Average]
+  (min, avg, max) = (2466228.317, 3525856.882, 3965582.581), stdev = 355807.026
+  CI (99.9%): [3259329.054, 3792384.711] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.joinTransform
+
+# Run progress: 38.89% complete, ETA 02:32:15
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: 1410768.041 ops/s
+# Warmup Iteration   2: 1392787.690 ops/s
+# Warmup Iteration   3: 1407661.387 ops/s
+# Warmup Iteration   4: 1359402.673 ops/s
+# Warmup Iteration   5: 1435507.241 ops/s
+Iteration   1: 1465502.043 ops/s
+Iteration   2: 1428403.156 ops/s
+Iteration   3: 1294499.034 ops/s
+Iteration   4: 1226995.835 ops/s
+Iteration   5: 1400974.595 ops/s
+
+# Run progress: 39.58% complete, ETA 02:30:31
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: 1331862.758 ops/s
+# Warmup Iteration   2: 1329015.722 ops/s
+# Warmup Iteration   3: 1235282.957 ops/s
+# Warmup Iteration   4: 1231955.567 ops/s
+# Warmup Iteration   5: 1411503.004 ops/s
+Iteration   1: 1167825.715 ops/s
+Iteration   2: 1430243.864 ops/s
+Iteration   3: 1389585.011 ops/s
+Iteration   4: 1462659.916 ops/s
+Iteration   5: 1385506.516 ops/s
+
+# Run progress: 40.28% complete, ETA 02:28:47
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: 1376701.862 ops/s
+# Warmup Iteration   2: 1419903.351 ops/s
+# Warmup Iteration   3: 1479681.902 ops/s
+# Warmup Iteration   4: 1493553.237 ops/s
+# Warmup Iteration   5: 1460338.805 ops/s
+Iteration   1: 1355549.854 ops/s
+Iteration   2: 1347199.881 ops/s
+Iteration   3: 1470024.422 ops/s
+Iteration   4: 1433783.156 ops/s
+Iteration   5: 1410356.029 ops/s
+
+# Run progress: 40.97% complete, ETA 02:27:02
+# Fork: 1 of 5
+# Warmup Iteration   1: 1426060.072 ops/s
+# Warmup Iteration   2: 1330235.456 ops/s
+# Warmup Iteration   3: 1406112.887 ops/s
+# Warmup Iteration   4: 1388516.968 ops/s
+# Warmup Iteration   5: 1035382.136 ops/s
+Iteration   1: 37434.791 ops/s
+Iteration   2: 1165089.157 ops/s
+Iteration   3: 1383238.934 ops/s
+Iteration   4: 1271617.865 ops/s
+Iteration   5: 1302868.469 ops/s
+
+# Run progress: 41.67% complete, ETA 02:25:40
+# Fork: 2 of 5
+# Warmup Iteration   1: 1427414.501 ops/s
+# Warmup Iteration   2: 1391460.552 ops/s
+# Warmup Iteration   3: 1415408.787 ops/s
+# Warmup Iteration   4: 1249627.016 ops/s
+# Warmup Iteration   5: 1357714.545 ops/s
+Iteration   1: 1351913.154 ops/s
+Iteration   2: 1464670.796 ops/s
+Iteration   3: 1443166.168 ops/s
+Iteration   4: 1480149.209 ops/s
+Iteration   5: 1468832.024 ops/s
+
+# Run progress: 42.36% complete, ETA 02:23:55
+# Fork: 3 of 5
+# Warmup Iteration   1: 1467080.576 ops/s
+# Warmup Iteration   2: 1471802.439 ops/s
+# Warmup Iteration   3: 1444146.361 ops/s
+# Warmup Iteration   4: 1298145.192 ops/s
+# Warmup Iteration   5: 1648622.489 ops/s
+Iteration   1: 1720617.151 ops/s
+Iteration   2: 1721236.610 ops/s
+Iteration   3: 1693018.640 ops/s
+Iteration   4: 1712351.278 ops/s
+Iteration   5: 1687108.078 ops/s
+
+# Run progress: 43.06% complete, ETA 02:22:10
+# Fork: 4 of 5
+# Warmup Iteration   1: 1671121.796 ops/s
+# Warmup Iteration   2: 1705832.853 ops/s
+# Warmup Iteration   3: 1723293.505 ops/s
+# Warmup Iteration   4: 1730867.155 ops/s
+# Warmup Iteration   5: 1677466.116 ops/s
+Iteration   1: 1719120.054 ops/s
+Iteration   2: 1709686.477 ops/s
+Iteration   3: 1731897.588 ops/s
+Iteration   4: 1707834.578 ops/s
+Iteration   5: 1706830.530 ops/s
+
+# Run progress: 43.75% complete, ETA 02:20:25
+# Fork: 5 of 5
+# Warmup Iteration   1: 1679902.220 ops/s
+# Warmup Iteration   2: 1698087.217 ops/s
+# Warmup Iteration   3: 1647144.096 ops/s
+# Warmup Iteration   4: 1711419.848 ops/s
+# Warmup Iteration   5: 1719737.506 ops/s
+Iteration   1: 1709717.365 ops/s
+Iteration   2: 1675485.592 ops/s
+Iteration   3: 1689659.097 ops/s
+Iteration   4: 1676203.803 ops/s
+Iteration   5: 1625778.982 ops/s
+
+
+Result "io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.joinTransform":
+  1514221.056 ±(99.9%) 264086.295 ops/s [Average]
+  (min, avg, max) = (37434.791, 1514221.056, 1731897.588), stdev = 352547.648
+  CI (99.9%): [1250134.761, 1778307.350] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.simpleTransform
+
+# Run progress: 44.44% complete, ETA 02:18:40
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: 7189596.221 ops/s
+# Warmup Iteration   2: 8601292.335 ops/s
+# Warmup Iteration   3: 8575211.491 ops/s
+# Warmup Iteration   4: 8779940.943 ops/s
+# Warmup Iteration   5: 8674207.266 ops/s
+Iteration   1: 8734783.201 ops/s
+Iteration   2: 8770363.495 ops/s
+Iteration   3: 8793312.112 ops/s
+Iteration   4: 8688265.711 ops/s
+Iteration   5: 8775722.332 ops/s
+
+# Run progress: 45.14% complete, ETA 02:16:55
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: 8277764.136 ops/s
+# Warmup Iteration   2: 8546553.885 ops/s
+# Warmup Iteration   3: 8448005.325 ops/s
+# Warmup Iteration   4: 8430847.641 ops/s
+# Warmup Iteration   5: 8415334.007 ops/s
+Iteration   1: 8523034.669 ops/s
+Iteration   2: 8333780.663 ops/s
+Iteration   3: 8577742.571 ops/s
+Iteration   4: 8621408.657 ops/s
+Iteration   5: 8610646.181 ops/s
+
+# Run progress: 45.83% complete, ETA 02:15:10
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: 8234264.863 ops/s
+# Warmup Iteration   2: 8630792.355 ops/s
+# Warmup Iteration   3: 8685793.249 ops/s
+# Warmup Iteration   4: 8525612.888 ops/s
+# Warmup Iteration   5: 8678564.381 ops/s
+Iteration   1: 8572798.633 ops/s
+Iteration   2: 8648660.987 ops/s
+Iteration   3: 8546638.803 ops/s
+Iteration   4: 8481559.638 ops/s
+Iteration   5: 8594965.453 ops/s
+
+# Run progress: 46.53% complete, ETA 02:13:26
+# Fork: 1 of 5
+# Warmup Iteration   1: 8137291.185 ops/s
+# Warmup Iteration   2: 8192619.669 ops/s
+# Warmup Iteration   3: 8445279.416 ops/s
+# Warmup Iteration   4: 8500023.575 ops/s
+# Warmup Iteration   5: 8461844.656 ops/s
+Iteration   1: 8395103.522 ops/s
+Iteration   2: 8533956.966 ops/s
+Iteration   3: 8247238.126 ops/s
+Iteration   4: 8587382.276 ops/s
+Iteration   5: 8431536.624 ops/s
+
+# Run progress: 47.22% complete, ETA 02:11:42
+# Fork: 2 of 5
+# Warmup Iteration   1: 8353498.314 ops/s
+# Warmup Iteration   2: 8470626.245 ops/s
+# Warmup Iteration   3: 8519262.398 ops/s
+# Warmup Iteration   4: 8453649.966 ops/s
+# Warmup Iteration   5: 8587998.537 ops/s
+Iteration   1: 8056720.372 ops/s
+Iteration   2: 8625302.253 ops/s
+Iteration   3: 8480480.709 ops/s
+Iteration   4: 8519686.897 ops/s
+Iteration   5: 8482403.055 ops/s
+
+# Run progress: 47.92% complete, ETA 02:09:57
+# Fork: 3 of 5
+# Warmup Iteration   1: 8120433.237 ops/s
+# Warmup Iteration   2: 8745999.376 ops/s
+# Warmup Iteration   3: 8801706.404 ops/s
+# Warmup Iteration   4: 8809208.775 ops/s
+# Warmup Iteration   5: 8610521.931 ops/s
+Iteration   1: 8821498.479 ops/s
+Iteration   2: 8805972.092 ops/s
+Iteration   3: 8770178.398 ops/s
+Iteration   4: 8776289.006 ops/s
+Iteration   5: 8782767.716 ops/s
+
+# Run progress: 48.61% complete, ETA 02:08:12
+# Fork: 4 of 5
+# Warmup Iteration   1: 8449961.691 ops/s
+# Warmup Iteration   2: 8782439.477 ops/s
+# Warmup Iteration   3: 8702227.364 ops/s
+# Warmup Iteration   4: 8365999.527 ops/s
+# Warmup Iteration   5: 7550413.694 ops/s
+Iteration   1: 8060000.996 ops/s
+Iteration   2: 8661466.926 ops/s
+Iteration   3: 8781767.671 ops/s
+Iteration   4: 8872005.045 ops/s
+Iteration   5: 8903002.205 ops/s
+
+# Run progress: 49.31% complete, ETA 02:06:27
+# Fork: 5 of 5
+# Warmup Iteration   1: 8502916.403 ops/s
+# Warmup Iteration   2: 8821345.346 ops/s
+# Warmup Iteration   3: 8730956.364 ops/s
+# Warmup Iteration   4: 8868027.961 ops/s
+# Warmup Iteration   5: 8798805.662 ops/s
+Iteration   1: 8933559.294 ops/s
+Iteration   2: 8927178.183 ops/s
+Iteration   3: 8850492.655 ops/s
+Iteration   4: 8710318.450 ops/s
+Iteration   5: 8937513.585 ops/s
+
+
+Result "io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.simpleTransform":
+  8638152.860 ±(99.9%) 192172.905 ops/s [Average]
+  (min, avg, max) = (8056720.372, 8638152.860, 8937513.585), stdev = 256545.330
+  CI (99.9%): [8445979.955, 8830325.765] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.complexTransform
+
+# Run progress: 50.00% complete, ETA 02:04:43
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 50.69% complete, ETA 02:02:58
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 51.39% complete, ETA 02:01:13
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 52.08% complete, ETA 01:59:29
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 52.78% complete, ETA 01:57:44
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 53.47% complete, ETA 01:56:00
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 54.17% complete, ETA 01:54:16
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 54.86% complete, ETA 01:52:31
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.complexTransform":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.joinTransform
+
+# Run progress: 55.56% complete, ETA 01:50:47
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 56.25% complete, ETA 01:49:02
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 56.94% complete, ETA 01:47:18
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 57.64% complete, ETA 01:45:34
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 58.33% complete, ETA 01:43:49
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 59.03% complete, ETA 01:42:05
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 59.72% complete, ETA 01:40:21
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 60.42% complete, ETA 01:38:36
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.joinTransform":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.simpleTransform
+
+# Run progress: 61.11% complete, ETA 01:36:52
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 61.81% complete, ETA 01:35:08
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 62.50% complete, ETA 01:33:24
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 63.19% complete, ETA 01:31:40
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 63.89% complete, ETA 01:29:56
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 64.58% complete, ETA 01:28:12
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 65.28% complete, ETA 01:26:28
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 65.97% complete, ETA 01:24:44
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataBenchmarkingTransformer.simpleTransform":
+  ≈ 10⁻⁵ s/op
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.complexTransform
+
+# Run progress: 66.67% complete, ETA 01:23:00
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 67.36% complete, ETA 01:21:16
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 68.06% complete, ETA 01:19:32
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 68.75% complete, ETA 01:17:48
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 69.44% complete, ETA 01:16:04
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 70.14% complete, ETA 01:14:20
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 70.83% complete, ETA 01:12:36
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 71.53% complete, ETA 01:10:53
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.complexTransform":
+  ≈ 10⁻⁵ s/op
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.joinTransform
+
+# Run progress: 72.22% complete, ETA 01:09:09
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 72.92% complete, ETA 01:07:25
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 73.61% complete, ETA 01:05:41
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 74.31% complete, ETA 01:03:57
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 75.00% complete, ETA 01:02:13
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 75.69% complete, ETA 01:00:29
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 76.39% complete, ETA 00:58:45
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+# Run progress: 77.08% complete, ETA 00:57:02
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.joinTransform":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.simpleTransform
+
+# Run progress: 77.78% complete, ETA 00:55:18
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 78.47% complete, ETA 00:53:34
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 79.17% complete, ETA 00:51:50
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 79.86% complete, ETA 00:50:07
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 80.56% complete, ETA 00:48:23
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 81.25% complete, ETA 00:46:39
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 81.94% complete, ETA 00:44:55
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+# Run progress: 82.64% complete, ETA 00:43:12
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+
+Result "io.github.dhi13man.transformer.impl.JsonataPrecompiledBenchmarkingTransformer.simpleTransform":
+  ≈ 10⁻⁵ s/op
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.complexTransform
+
+# Run progress: 83.33% complete, ETA 00:41:28
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 84.03% complete, ETA 00:39:44
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 84.72% complete, ETA 00:38:00
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 85.42% complete, ETA 00:36:17
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 86.11% complete, ETA 00:34:33
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 86.81% complete, ETA 00:32:49
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 87.50% complete, ETA 00:31:05
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 88.19% complete, ETA 00:29:22
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+
+Result "io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.complexTransform":
+  ≈ 10⁻⁷ s/op
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.joinTransform
+
+# Run progress: 88.89% complete, ETA 00:27:38
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+
+# Run progress: 89.58% complete, ETA 00:25:54
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+
+# Run progress: 90.28% complete, ETA 00:24:11
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+
+# Run progress: 90.97% complete, ETA 00:22:27
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+
+# Run progress: 91.67% complete, ETA 00:20:43
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+
+# Run progress: 92.36% complete, ETA 00:19:00
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+
+# Run progress: 93.06% complete, ETA 00:17:16
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+
+# Run progress: 93.75% complete, ETA 00:15:32
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+
+
+Result "io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.joinTransform":
+  ≈ 10⁻⁶ s/op
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.9, OpenJDK 64-Bit Server VM, 17.0.9+8-LTS
+# VM invoker: /Users/dhimanseal/Library/Java/JavaVirtualMachines/corretto-17.0.9/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58811:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.simpleTransform
+
+# Run progress: 94.44% complete, ETA 00:13:49
+# Warmup Fork: 1 of 3
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 95.14% complete, ETA 00:12:05
+# Warmup Fork: 2 of 3
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 95.83% complete, ETA 00:10:21
+# Warmup Fork: 3 of 3
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 96.53% complete, ETA 00:08:38
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 97.22% complete, ETA 00:06:54
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 97.92% complete, ETA 00:05:10
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 98.61% complete, ETA 00:03:27
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+# Run progress: 99.31% complete, ETA 00:01:43
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+
+
+Result "io.github.dhi13man.transformer.impl.NativeBenchmarkingTransformer.simpleTransform":
+  ≈ 10⁻⁷ s/op
+
+
+# Run complete. Total time: 04:08:39
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                    Mode  Cnt        Score        Error  Units
+JsonataBenchmarkingTransformer.complexTransform             thrpt   25     9601.857 ±    241.308  ops/s
+JsonataBenchmarkingTransformer.joinTransform                thrpt   25    10025.792 ±    457.922  ops/s
+JsonataBenchmarkingTransformer.simpleTransform              thrpt   25    53410.498 ±   1682.844  ops/s
+JsonataPrecompiledBenchmarkingTransformer.complexTransform  thrpt   25    55596.942 ±   1724.073  ops/s
+JsonataPrecompiledBenchmarkingTransformer.joinTransform     thrpt   25    27384.579 ±    582.957  ops/s
+JsonataPrecompiledBenchmarkingTransformer.simpleTransform   thrpt   25    69261.394 ±   1871.680  ops/s
+NativeBenchmarkingTransformer.complexTransform              thrpt   25  3525856.882 ± 266527.829  ops/s
+NativeBenchmarkingTransformer.joinTransform                 thrpt   25  1514221.056 ± 264086.295  ops/s
+NativeBenchmarkingTransformer.simpleTransform               thrpt   25  8638152.860 ± 192172.905  ops/s
+JsonataBenchmarkingTransformer.complexTransform              avgt   25       ≈ 10⁻⁴                s/op
+JsonataBenchmarkingTransformer.joinTransform                 avgt   25       ≈ 10⁻⁴                s/op
+JsonataBenchmarkingTransformer.simpleTransform               avgt   25       ≈ 10⁻⁵                s/op
+JsonataPrecompiledBenchmarkingTransformer.complexTransform   avgt   25       ≈ 10⁻⁵                s/op
+JsonataPrecompiledBenchmarkingTransformer.joinTransform      avgt   25       ≈ 10⁻⁴                s/op
+JsonataPrecompiledBenchmarkingTransformer.simpleTransform    avgt   25       ≈ 10⁻⁵                s/op
+NativeBenchmarkingTransformer.complexTransform               avgt   25       ≈ 10⁻⁷                s/op
+NativeBenchmarkingTransformer.joinTransform                  avgt   25       ≈ 10⁻⁶                s/op
+NativeBenchmarkingTransformer.simpleTransform                avgt   25       ≈ 10⁻⁷                s/op
+
+Process finished with exit code 0
+
+# Results
+
+| Benchmarking Operation                                     | Throughput (ops/s)          | Time (s/op) |
+| ---------------------------------------------------------- | --------------------------- | ----------- |
+| JsonataBenchmarkingTransformer.complexTransform            | 9,601.857 ± 241.308         | 10⁻⁴        |
+| JsonataBenchmarkingTransformer.joinTransform               | 10,025.792 ± 457.922        | 10⁻⁴        |
+| JsonataBenchmarkingTransformer.simpleTransform             | 53,410.498 ± 1,682.844      | 10⁻⁵        |
+| JsonataPrecompiledBenchmarkingTransformer.complexTransform | 55,596.942 ± 1,724.073      | 10⁻⁵        |
+| JsonataPrecompiledBenchmarkingTransformer.joinTransform    | 27,384.579 ± 582.957        | 10⁻⁴        |
+| JsonataPrecompiledBenchmarkingTransformer.simpleTransform  | 69,261.394 ± 1,871.680      | 10⁻⁵        |
+| NativeBenchmarkingTransformer.complexTransform             | 3,525,856.882 ± 266,527.829 | 10⁻⁷        |
+| NativeBenchmarkingTransformer.joinTransform                | 1,514,221.056 ± 264,086.295 | 10⁻⁶        |
+| NativeBenchmarkingTransformer.simpleTransform              | 8,638,152.860 ± 192,172.905 | 10⁻⁷        |
