@@ -1386,4 +1386,3 @@ Process finished with exit code 0
 | NativeBenchmarkingTransformer.complexTransform             | 3,632,802.799 ± 527,159.058 | 10⁻⁷        |
 | NativeBenchmarkingTransformer.joinTransform                | 1,684,882.695 ± 40,084.917  | 10⁻⁶        |
 | NativeBenchmarkingTransformer.simpleTransform              | 8,079,694.875 ± 847,294.181 | 10⁻⁷        |
-
