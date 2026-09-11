@@ -6,6 +6,17 @@ work in native Java.
 This benchmark is implemented
 using [Java Microbenchmark Harness (JMH)](https://github.com/openjdk/jmh)
 
+
+## Run the benchmark
+
+Requires a JDK and Maven. From the repository root:
+
+```sh
+mvn -q test
+```
+
+See `pom.xml` and `src/main/java/io/github/dhi13man/JsonataBenchmarkingRunner.java`. Results from the 2023-12-15 run are under `reports/`.
+
 ## Latest Run (2023-12-15T20:00:00Z IST) Results
 
 [![img.png](assets/2023-12-15T20:00:00Z.png)](https://github.com/Dhi13man/jsonata4java-benchmark/blob/218dd4403842fecb80a0713c1a80c83396089eb9/reports/2023-12-15T20%3A00%3A00Z/native_vs_jsonata_vs_jsonata_precompiled.txt)
@@ -40,3 +51,11 @@ for most systems, because of its flexibility.
 
 Further, pre-compiling the JSONata expressions in Java could lead to performance improvements, even
 if not as much as native implementation.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+See [LICENSE](LICENSE).
